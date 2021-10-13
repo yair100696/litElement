@@ -19,6 +19,9 @@ class GetData extends LitElement {
     }
 
 
+    /**
+     *Metodo asincrono donde obtengo mi Api y la transformo en Json 
+     */
     obtenerDatos() {
         fetch(this.url, {method: this.metodo})
         .then((respuesta) => {
