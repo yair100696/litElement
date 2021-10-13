@@ -22,10 +22,14 @@ class Index extends LitElement {
                 width: 600px
             }
 
-            td{padding: 20px}
-            thead{background-color: #246355;
-            border-bottom: solid 5px #0F362D
-            color: white;
+            thead {
+                background-color: #246355;
+                border-bottom: solid 5px #0F362D
+                color: white;
+            }
+
+            td {
+                max-width: 2rem;
             }
 
         `;
@@ -52,9 +56,15 @@ class Index extends LitElement {
             <div id="main-container">
                 <table>
                     <thead>
+                        <div class="row">
                         <tr>
-                            <th>Comprador</th><th>Publisher</th>
-                        </tr>
+                                <th>Comprador</th>
+                            </div>
+                                <th>Publisher</th>
+                            </div>
+                        </tr>                          
+                        </div>
+  
                     </thead>
                         <tr>
                             <td>${elemento.buyer.name}</td> <td>${elemento.publisher.name}</td>
